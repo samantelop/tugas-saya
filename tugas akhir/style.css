@@ -1,0 +1,155 @@
+body {
+  margin: 0;  
+}
+main {
+    padding: 20px;
+    overflow: auto;
+    display:flex;
+    gap: 1,5rem;
+
+}
+
+.container {
+    padding: 2px;
+    background-color: aliceblue;
+}
+
+.slider-container { 
+    height: 500px;
+   
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.slider-container .slide {
+    scroll-snap-align: start;
+}
+.slider-container img {
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+}
+h1 {
+    color: black;
+    padding: -50% -50%;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-weight: 800;
+    font-size: 150px;
+    font-family: 'quiclsand', sans-serif;
+}
+.satu {
+    color: transparent;
+    position: relative;
+    background: url(assetss/bukit\ .jpg);
+    background-repeat: repeat;
+    
+    background-clip: text;
+    font-size: 110px;
+    padding: 5px;
+}
+.tiga {
+    color: blue;
+    position: relative;
+    background: url(assetss/bukit\ .jpg);
+    font-size: 110px;
+    padding: 5px;
+}
+nav {
+    background-color: skyblue;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+
+}
+nav ul {
+    display: flex;
+    gap: 4rem;
+}
+nav li {
+    display: flex;
+    padding: 5px;
+    font-size: 30px;
+}
+nav li:hover {
+    text-transform: 0.1s ease-in-out;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+nav a {
+    text-decoration: none;
+}
+.card {
+    width: 75%;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 3px 5px rgb(225, 43, 43);
+}
+
+.img1 {
+    width: 40%;
+    height: 20%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.dua {
+    
+    color: rgb(3, 155, 215);
+    font-weight: 300;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+aside{
+   float: right;
+   width: 25%;
+   padding: 20px;
+}
+.box {
+    width: 200px;
+    height: 500px;
+    box-shadow: 1px 3px 2px 5px skyblue;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+.saya {
+    width: 300px;
+    height: 225px;
+}
+.jumbotron{
+    
+    padding: 10px;
+    background-color: #2a86bb;
+    text-align: center;
+    color: white;
+}
+footer {
+    background-color: aqua;
+   padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    main{
+        flex-flow:column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 768px)  {
+    nav ul{
+        justify-content: center;
+    }
+    main aside{
+        align-self: stretch;
+    }
+}
